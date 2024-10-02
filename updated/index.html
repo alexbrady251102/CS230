@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutor Form</title>
+  <script>
+    function showForm(formId) {
+      var formContainer = document.getElementById(formId);
+      if (formContainer.style.display === "none") {
+        formContainer.style.display = "block";
+      } else {
+        formContainer.style.display = "none";
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>Tutor Form</h1>
+  <a href="#" onclick="showForm('tutorForm')">Fill Tutor Form</a>
+  <div id="tutorForm" class="form-container">
+    <form>
+  
+  <form id="tutorForm">
+    <label for="title">Title:</label>
+    <select id="title" name="title">
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Ms">Ms</option>
+      <option value="Dr">Dr</option>
+    </select><br>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br>
+
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="address1">Address Line 1:</label>
+    <input type="text" id="address1" name="address1" required><br>
+
+    <label for="address2">Address Line 2:</label>
+    <input type="text" id="address2" name="address2"><br>
+
+    <label for="town">Town:</label>
+    <input type="text" id="town" name="town" required><br>
+
+    <label for="county">County:</label>
+    <input type="text" id="county" name="county" required><br>
+
+    <label for="eircode">Eircode:</label>
+    <input type="text" id="eircode" name="eircode" required><br>
+
+    <label for="tutorId">Tutor ID:</label>
+<input type="text" id="tutorId" name="tutorId">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h1>Student Form</h1>
+  <a href="#" onclick="showForm('studentForm')">Fill Student Form</a>
+
+  <div id="studentForm" class="form-container">
+  <form id="studentForm">
+    <label for="title">Title:</label>
+    <select id="title" name="title">
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Ms">Ms</option>
+      <option value="Dr">Dr</option>
+    </select><br>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br>
+
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="address1">Address Line 1:</label>
+    <input type="text" id="address1" name="address1" required><br>
+
+    <label for="address2">Address Line 2:</label>
+    <input type="text" id="address2" name="address2"><br>
+
+    <label for="town">Town:</label>
+    <input type="text" id="town" name="town" required><br>
+
+    <label for="county">County:</label>
+    <input type="text" id="county" name="county" required><br>
+
+    <label for="eircode">Eircode:</label>
+    <input type="text" id="eircode" name="eircode" required><br>
+
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth" required><br>
+
+    <label for="parentName">Name of Parent (if under 18):</label>
+    <input type="text" id="parentName" name="parentName"><br>
+
+    <label for="virtualPermission">Permission to Attend Virtually:</label>
+    <select id="virtualPermission" name="virtualPermission">
+      <option value="Y">Y</option>
+      <option value="N">N</option>
+    </select><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select><br>
+
+    <label for="degreeName">Name of Degree:</label>
+    <input type="text" id="degreeName" name="degreeName" required><br>
+
+    <label for="studentId">student ID:</label>
+<input type="text" id="studentId" name="studentId">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h1>Tutorial Form</h1>
+  <a href="#" onclick="showForm('tutorialForm')">Fill Tutorial Form</a>
+
+  <div id="tutorialForm" class="form-container">
+    <form>
+  <form id="tutorialForm">
+    <label for="tutorialDate">Tutorial Date:</label>
+    <input type="date" id="tutorialDate" name="tutorialDate" required><br>
+
+    <label for="tutorialTime">Tutorial Time:</label>
+    <input type="time" id="tutorialTime" name="tutorialTime" required><br>
+
+    <label for="students">Students:</label>
+    <input type="text" id="students" name="students" required><br>
+
+    <label for="tutor">Tutor:</label>
+    <input type="text" id="tutor" name="tutor" required><br>
+
+    <label for="fee">Fee (€):</label>
+    <input type="number" id="fee" name="fee" required><br>
+
+    <label for="tutorialNumber">Tutorial Number:</label>
+    <input type="text" id="tutorialNumber" name="tutorialNumber" required><br>
+
+    <label for="tutorialAttendance">Tutorial Attendance:</label>
+    <select id="tutorialAttendance" name="tutorialAttendance">
+      <option value="Attended">Attended</option>
+      <option value="Cancelled">Cancelled</option>
+      <option value="No Show">No Show</option>
+    </select><br>
+
+    <label for="tutorialSubject">Tutorial Subject:</label>
+    <select id="tutorialSubject" name="tutorialSubject">
+      <option value="English">English</option>
+      <option value="Irish">Irish</option>
+      <option value="Maths">Maths</option>
+      <option value="Biology">Biology</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Physics">Physics</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Other">Other (specify)</option>
+    </select><br>
+
+    <label for="otherSubject">Other Subject:</label>
+    <input type="text" id="otherSubject" name="otherSubject"><br>
+
+    <label for="tutorialNotes">Tutorial Notes:</label>
+    <textarea id="tutorialNotes" name="tutorialNotes" required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <ul id="tutorsList"></ul>
+
+  <script src="client.js"></script>
+  <script>
+    function showForm(formId) {
+      var formContainer = document.getElementById(formId);
+      if (formContainer.style.display === "none") {
+        formContainer.style.display = "block";
+      } else {
+        formContainer.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+//i cba commenting all this its html it doesnt really need it and ive also been sitting doing this for 17 hours 
